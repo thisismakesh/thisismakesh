@@ -1,0 +1,173 @@
+.dark
+{
+    color: white;
+    background: black;
+}
+
+.light
+{
+    color: black;
+    background: white;
+}
+
+
+.topWrapper{
+  border: 1px solid;
+  width: 100%;
+  position: fixed;
+}
+
+.topWrapper .text{
+  animation: leftRight 15s infinite;
+}
+
+
+/* Bike Cluster starts */
+.bikeHead{
+  stroke: white;
+  /* width: 380px; */
+  /* width: 10px; */
+  position: relative;
+  animation: tiltLeftRight 5s infinite;
+}
+
+.bikeHead .pointer{
+  width: 5%;
+  position: absolute;
+  top: calc(30%);
+  left: calc(50% - 2.5%);
+  animation: pointerRotate 5s cubic-bezier(0.01, -0.22, 1, 0.21) infinite;
+  /* transform: rotate(
+77deg
+) translate(-17px, 15px); */
+}
+
+
+@keyframes pointerRotate {
+  10% {transform: rotate( 40deg) translate(-10px, 5px);}
+  
+/*   20% {transform: rotate(80deg) translate(-8px, 13px);}
+  30% {transform: rotate(120deg) translate(-8px, 13px);} */
+   50% {transform: rotate(77deg) translate(-17px, 15px);}
+
+}
+
+@keyframes leftRight{
+  0% { transform: translate(0px, 10px);}
+  50% { transform: translate(calc(100% - 200px), 10px);}
+  100% { transform: translate(0px, 10px);}
+}
+
+@keyframes tiltLeftRight{
+  0% {transform: rotate( 40deg); }
+  50% {transform: rotate( -40deg); }
+  100% {transform: rotate( 40deg); }
+}
+
+
+.bottomWrapper{
+  /* text-align: center; */
+  width: 15%;
+  /* margin: 0 auto; */
+  position: fixed;
+  bottom: 0;
+  left: calc(43% - 9px);
+}
+
+/* Bike Cluster ends */
+
+
+.middleWrapper{
+  display: flex;
+  /* overflow: scroll; */
+  /* height: 500px; */
+}
+
+
+.middleWrapper .leftSpace{
+  width: 40%;
+}
+
+.middleWrapper .road{
+  width: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+  border-left: 1px dashed;
+  border-right: 1px dashed;
+}
+
+.middleWrapper .rightSpace{
+  width: 40%;
+}
+
+
+
+/*road starts*/
+.road{
+  /* text-align: center; */
+  width: 20%;
+  /* margin: 0 auto; */
+}
+
+.roadDivider{
+  height: 200px;
+  width: 20px;
+  border: .25px solid;
+  /* margin-bottom: 100px; */
+  margin-bottom: 100px;
+  /* display: flex; */
+  /* justify-content: center; */
+}
+
+/*road ends*/
+
+
+/*bill board starts*/
+.billBoard{
+  position: relative;
+  /* width: 600px; */
+  /* height: 400px; */
+}
+
+.rightSpace .space,
+.leftSpace .space{
+  height: 500px;
+  display: block;
+}
+
+.billBoard .text{
+  position: absolute;
+  /* top: 0; */
+  font-size: 4em;
+  /* margin: 0 auto; */
+  width: calc(60% - 30px);
+  top: 20%;
+  left: 23%;
+/*   border: 1px solid red; */
+  /* transform: rotate(336deg) translate(10px, 10px); */
+  /* transform: translate3d(4px, 42px, 0px); */
+  transform: skew(0deg, 335deg) translate3d(0px, -4px, 0px) rotate(0deg);
+  /* max-height: 294px; */
+  overflow: scroll;
+  height: 25%;
+}
+
+
+/* to hide the scrollbar */
+.billBoard .text, body{
+  /* this will hide the scrollbar in mozilla based browsers */
+  overflow: -moz-scrollbars-none;
+  scrollbar-width: none;
+  /* this will hide the scrollbar in internet explorers */
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar,
+.billBoard .text::-webkit-scrollbar { 
+  width: 0 !important;
+  display: none; 
+}
+/*bill board ends  */
+

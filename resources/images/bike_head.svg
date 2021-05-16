@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 298.389 178.336">
+    <g transform="translate(353.697 14.644)">
+
+        <g transform="translate(-315.035 -14.137)" class="cluster">
+            <path
+                d="M-377.574,17.779h223.84s5.671-63.14-28.652-81.27l-50.439-30.474-35.814-6.172-34.621,6.172-49.134,30.47s-29.658,24.955-25.181,81.273"
+                transform="translate(378.035 100.137)" fill="none"  stroke-width="1" />
+            <path
+                d="M-359.126,5.462h181.995V-32.772L-205.853-75.1s-122.619-.455-122.895,0-30.379,42.786-30.379,42.33Z"
+                transform="translate(377.035 107.915)" fill="none"  stroke-width="1" />
+            <g transform="translate(59.331 20.137)" fill="none"  stroke-width="1">
+                <ellipse cx="50" cy="47.889" rx="50" ry="47.889" stroke="none" />
+                <ellipse cx="50" cy="47.889" rx="49.5" ry="47.389" fill="none" />
+            </g>
+        </g>
+
+        <g transform="translate(-213 45)" class="pointer">
+            <g fill="none"  stroke-width="1">
+                <ellipse cx="9" cy="10" rx="9" ry="10" stroke="none" />
+                <ellipse cx="9" cy="10" rx="8.5" ry="9.5" fill="none" />
+            </g>
+            <g transform="translate(7 20)" fill="none"  stroke-width="1">
+                <rect width="4" height="33" stroke="none" />
+                <rect x="0.5" y="0.5" width="3" height="32" fill="none" />
+            </g>
+        </g>
+
+        <g transform="translate(-196 59)" class="handle">
+            <path d="M-248,73l70-74,52,27h54L-15-1,49.015,73,33.539,89-15,46-72,73h-54l-52-27-54,43Z"
+                transform="translate(91 15)" fill="none"  stroke-width="1" />
+            <path d="M-82,29l51,30H-82Z" transform="translate(1)" fill="none" 
+                stroke-width="1" />
+            <path d="M62,29,14,60H62Z" transform="translate(5)" fill="none"  stroke-width="1" />
+            <g transform="translate(-16.578 59.055) rotate(1)">
+                <path d="M15,0l5,9-5,9H5L0,9,5,0Z" fill="none"  stroke-linecap="round"
+                    stroke-width="1" />
+                <g transform="translate(3 1)" fill="none"  stroke-width="1">
+                    <ellipse cx="7" cy="8" rx="7" ry="8" stroke="none" />
+                    <ellipse cx="7" cy="8" rx="6.5" ry="7.5" fill="none" />
+                </g>
+            </g>
+        </g>
+        
+    </g>
+</svg>
